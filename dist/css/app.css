@@ -1316,4 +1316,13 @@ video {
       }
       }
 
-        
+.name-item input,
+.item input{
+   padding: 5px !important;
+   color: black;
+}
+
+.name-item input::placeholder,
+.item input {
+    color: grey;
+}

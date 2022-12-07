@@ -53,8 +53,9 @@ undoBtn.addEventListener("click", function (event) {
 createPDFBtn.addEventListener("click", function (event) {
   window.html2canvas = html2canvas;
   window.jsPDF = window.jspdf.jsPDF
-  var doc = new jsPDF('p', 'pt', 'a4');
+  var doc = new jsPDF('p', 'pt', 'a4',10,10);
   
+
 
 
   doc.html(document.getElementById('toPrint'), {
