@@ -175,3 +175,7 @@
  #finaldate{
     width: 30%;
  }
+
+ #btns button{
+    margin-left: 10px;
+ }
