@@ -39,12 +39,12 @@
             <div class="banner">
               <h1>COMMERCIAL APPLICATION TO RENT</h1>
             </div>
-            <p class="top-info">Want to become a member of our Gym? Then start by filling our form to complete
-              registration. We will contact you shortly to notify you about your membership card.</p>
+            <!-- <p class="top-info">Want to become a member of our Gym? Then start by filling our form to complete
+              registration. We will contact you shortly to notify you about your membership card.</p> -->
             <div class="item">
               <p>Please, type your name and lastname<span class="required">*</span></p>
               <div class="name-item">
-                <input  type="text" name="name" placeholder="First" required />
+                <input  style="padding: 0 5px;" type="text" name="name" placeholder="First" required />
                 <input type="text" name="name" placeholder="Last" required />
               </div>
             </div>
@@ -59,7 +59,7 @@
             <div class="item">
               <p>Date of Birth:<span class="required">*</span></p>
               <div class="name-item">
-                <input type="date" style="max-width:30%" name="name" required />
+                <input type="date"  name="name" required />
               </div>
             </div>
 
@@ -74,10 +74,14 @@
             <div class="item">
               <p>Contact Information<span class="required">*</span></p>
               <div class="name-item">
-                <input type="text" style="max-width:30%" name="name" placeholder="Home phone" required />
-                <input type="text" style="max-width:30%" name="name" placeholder="Cell phone" required />
-                <input type="text" style="max-width:30%" name="name" placeholder="E-mail" required />
+                <input type="text"  name="name" placeholder="Home phone" required />
+                <input type="text"  name="name" placeholder="Cell phone" required />
               </div>
+            </div>
+
+            <div class="item">
+              <p>Email<span class="required">*</span></p>
+              <input type="email" name="name" placeholder="your@email.com" required />
             </div>
 
             <div class="item">
@@ -125,7 +129,7 @@
             <div class="item">
               <p>Planned move in date:<span class="required">*</span></p>
               <div class="name-item">
-                <input type="date" style="max-width:30%" name="name" required />
+                <input type="date" name="name" required />
               </div>
             </div>
 
@@ -165,9 +169,9 @@
             <div class="item">
               <p>I hereby authorize landlord/Broker to order a consumer credit report and verify previous and future
                 information, it is understand that a copy, email or faxsimile of this authorization is accepted as if it
-                were an original.<span class="required">*</span></p>
+                were an original.</p>
               <label for="today">Date</label>
-              <input style="max-width:30%" type="date" name="today" id="">
+              <input  type="date" name="today" id="finaldate">
             </div>
 
             <div class="col-md-12 d-flex justify-content-end">

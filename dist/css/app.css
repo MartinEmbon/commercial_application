@@ -45,6 +45,11 @@ h6 {
     font-size: inherit;
     font-weight: inherit
 }
+@media screen and (max-width:768px){
+    h1{
+        font-size: 22px !important;
+    }
+}
 
 a {
     color: inherit;
@@ -1318,7 +1323,7 @@ video {
 
 .name-item input,
 .item input{
-   padding: 5px !important;
+   padding: 0 5px !important;
    color: black;
 }
 
