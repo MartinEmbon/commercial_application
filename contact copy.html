@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/app.css">
+    <link rel="stylesheet" href="dist/css/form.css">
+    <link rel="stylesheet" href="dist/css/signature-pad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5134f85b78.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="dist/img/Besnik.svg">
+    <title>Real-Estate Landing Page v2</title>
+</head>
+
+<body>
+    <header class="bg-[#E6F0FF]">
+        <nav class="flex px-5 lg:px-40 pt-9 justify-center items-center font-poppins font-medium text-[14px]">
+            <div class="flex-none">
+                <img src="dist/img/Logo.svg" />
+            </div>
+            <div class="hidden space-x-6 md:pl-8 lg:pl-16 md:inline-flex md:flex-row text-[#4F5361]">
+                <a href="#">Home</a>
+                <a href="#">Fratures</a>
+                <a href="#">Service</a>
+                <a href="#">Listed</a>
+                <a href="#">Contact</a>
+            </div>
+         
+            <div class="ml-auto inline-flex flex-row">
+                <button class="hidden text-[#0F1B4C] w-full mx-3 md:block">Sign up</button>
+                <button class="bg-[#0F1B4C] rounded-lg text-white px-5 py-2.5">Register</button>
+            </div>
+        </nav>
+        <!-- end navigation bar -->
+        <!-- header content -->
+        <div class="flex flex-col lg:flex-row lg:justify-between items-center pt-10 font-poppins">
+            <div class="mx-8 lg:ml-40 lg:basis-1/2">
+                <p class="text-[#687690] font-medium text-[18px]">Welcome to Besnik Agency</p>
+                <h2 class="text-[#000336] text-[56px] md:text-[64px] font-bold leading-[4.75rem]">
+                    This is the Form Page.
+                </h2>
+                <h5 class="text-[#5A6473] text-[18px] font-normal">
+                    get the best real estate deals first,
+                    before they hit the mass market! HOT FORECLOSURE DEALS with one simple search
+                </h5>
+                <button
+                    class="w-44	h-12 bg-[#0F1B4C] rounded-xl py-3.5 px-9 my-10 text-white text-[13px] font-medium lg:px-5 lg:py-2.5">
+                    More About Us
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:justify-end lg:basis-1/2 lg:mr-16">
+                <img class="w-full h-full" src="dist/img/header.svg" />
+            </div>
+        </div>
+        <!-- end header content -->
+    </header>
+    <main>
+
+        <body onselectstart="return false">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-8" style="margin-top: 2%">
+                <div class="testbox">
+                  <form action="/">
+                    <div class="banner">
+                      <h1>Gym Membership Form</h1>
+                    </div>
+                    <p class="top-info">Want to become a member of our Gym? Then start by filling our form to complete
+                      registration. We will contact you shortly to notify you about your membership card.</p>
+                    <div class="item">
+                      <p>Name<span class="required">*</span></p>
+                      <div class="name-item">
+                        <input type="text" name="name" placeholder="First" required />
+                        <input type="text" name="name" placeholder="Last" required />
+                      </div>
+                    </div>
+                    <div class="question">
+                      <p>Gender<span class="required">*</span></p>
+                      <div class="question-answer">
+                        <label><input type="radio" value="none" name="gender" required /> <span>Male</span></label>
+                        <label><input type="radio" value="none" name="gender" required /> <span>Female</span></label>
+                      </div>
+                    </div>
+                    <div class="question">
+                      <p>Date of Birth<span class="required">*</span></p>
+                      <div class="question-answer">
+                        <label><input type="radio" value="none" name="gender" required /> <span>Male</span></label>
+                        <label><input type="radio" value="none" name="gender" required /> <span>Female</span></label>
+                      </div>
+                    </div>
+          
+          
+                    <div class="item">
+                      <p>Email<span class="required">*</span></p>
+                      <input type="text" name="name" required />
+                    </div>
+                    <div class="item">
+                      <p>Phone</p>
+                      <input type="text" name="name" />
+                    </div>
+          
+                    <div class="question">
+                      <p>Have you been in a Gym before?<span class="required">*</span></p>
+                      <div class="question-answer">
+                        <label><input type="radio" value="none" name="gym-before" required /> <span>Yes</span></label>
+                        <label><input type="radio" value="none" name="gym-before" required /> <span>No</span></label>
+                      </div>
+                    </div>
+                    <div class="question">
+                      <p>Membership Type<span class="required">*</span></p>
+                      <div class="question-answer">
+                        <label><input type="radio" value="none" name="membership" required /> <span>Regular</span></label>
+                        <label><input type="radio" value="none" name="membership" required /> <span>Pro</span></label>
+                        <label><input type="radio" value="none" name="membership" required /> <span>VIP</span></label>
+                      </div>
+                    </div>                  
+                   
+                    </div>
+                  </form>
+          
+          
+          
+                </div>
+          
+          
+                </div>
+              </div>
+            </div>
+            <script src="dist/js/signature_pad.umd.js"></script>
+            <script src="dist/js/sign-handler.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+            <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+          </body>
+</html>
