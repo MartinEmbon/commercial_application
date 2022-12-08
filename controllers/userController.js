@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer")
 
 let userController = {
     index:(req,res)=> {
-        return res.render("home")
+        return res.render("index")
     },
     email:(req,res)=> {
         let transporter = nodemailer.createTransport({
