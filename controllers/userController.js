@@ -16,7 +16,7 @@ let userController = {
             }
         });
         let mailOptions = {        
-            from:'syrahsommeliers@gmail.com' ,             
+            from:req.body.email,             
             to:'martinembon@hotmail.com' ,
             subject:`Message from ${req.body.name}`,
             text: `${req.body.message}`
