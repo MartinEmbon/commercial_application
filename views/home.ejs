@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/signature-pad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5134f85b78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="img/Besnik.svg">
+    <title>Real-Estate Landing Page v2</title>
+</head>
+
+
+<body onselectstart="return false">
+
+
+
+    <div class="d-flex justify-content-center">
+
+
+
+        <div class="col-md-8" style="margin-top: 2%">
+
+            <div class="col-md-12">
+                <div id="toPrint" class="col-md-12">
+
+                    <div class="form">
+                        <div class="banner">
+                            <h1>COMMERCIAL APPLICATION TO RENT</h1>
+                        </div>
+                        <!-- <p class="top-info">Want to become a member of our Gym? Then start by filling our form to complete
+              registration. We will contact you shortly to notify you about your membership card.</p> -->
+                        <div class="item">
+                            <p>Please, type your name and lastname<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input style="padding: 0 5px;" type="text" name="name" placeholder="First" required />
+                                <input type="text" name="name" placeholder="Last" required />
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Social Security Number<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="text" name="name" placeholder="555-55-5555" required />
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Date of Birth:<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="date" name="name" required />
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <p>Driver's Licence<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="text" name="name" placeholder="5555-5555" required />
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Contact Information<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="text" name="name" placeholder="Home phone" required />
+                                <input type="text" name="name" placeholder="Cell phone" required />
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Email<span class="required">*</span></p>
+                            <input type="email" name="name" placeholder="your@email.com" required />
+                        </div>
+
+                        <div class="item">
+                            <p>Present Home Address<span class="required">*</span></p>
+                            <input type="text" name="name" required />
+                        </div>
+
+                        <div class="item">
+                            <p>Name and phone number in case of emergency<span class="required">*</span></p>
+                            <input type="text" name="name" required />
+                        </div>
+
+                        <div class="question">
+                            <p>Have you been a party of an eviction or bankruptcy in the las 7 years:<span
+                                    class="required">*</span>
+                            </p>
+                            <div class="question-answer">
+                                <label><input type="radio" value="none" name="gender" required />
+                                    <span>Yes</span></label>
+                                <label><input type="radio" value="none" name="gender" required />
+                                    <span>No</span></label>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Source of income and describe income amounts:<span class="required">*</span></p>
+                            <div class="question-answer">
+                                <textarea placeholder="Type your answer here" cols="30"
+                                    style='border: 1px solid grey; resize: none; padding: 5px;' rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>How many people will be occupying the property:<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="text" style="max-width:30%" name="name" required />
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Name and age of each occupant:<span class="required">*</span></p>
+                            <div class="question-answer">
+                                <textarea placeholder="Type your answer here" cols="30"
+                                    style='border: 1px solid grey; resize: none; padding: 5px;' rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Planned move in date:<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="date" name="name" required />
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <p>Employment Information<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="text" name="name" placeholder="Employment or business company name"
+                                    required />
+                                <input type="text" name="name" placeholder="Employment address" required />
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <!-- <p>Employment Information<span class="required">*</span></p> -->
+                            <div class="name-item">
+                                <input type="text" name="name" placeholder="Employment phone number" required />
+                                <input type="text" name="name" placeholder="Income information" required />
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <p>Current and past landlord information<span class="required">*</span></p>
+                            <div class="name-item">
+                                <input type="text" name="name" placeholder="Fullname" required />
+                                <input type="text" name="name" placeholder="Phone" required />
+                            </div>
+
+                            <div class="name-item">
+                                <input style="margin-top: 12px;" type="text" name="name" placeholder="Fullname"
+                                    required />
+                                <input style="margin-top: 12px;" type="text" name="name" placeholder="Phone" required />
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="item">
+                            <p>I hereby authorize landlord/Broker to order a consumer credit report and verify previous
+                                and future
+                                information, it is understand that a copy, email or faxsimile of this authorization is
+                                accepted as if it
+                                were an original.</p>
+                            <label for="today">Date</label>
+                            <input type="date" name="today" id="finaldate">
+                        </div>
+
+                        <div class="col-md-12 d-flex justify-content-end">
+
+                            <div class="col-md-3 d-flex justify-content-center">
+                                <span class=" mb-4">Your Signature</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-end">
+                            <div class="col-md-3 d-flex justify-content-center">
+                                <img id="signature" style="border: 1px solid black;" width="250px" height="100px">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div style="text-align: center; padding-top: 12px;" class="col-md-12 d-flex justify-content-center ">
+                    <span class="col-md-3 mb-4">Sign here</span>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center ">
+                    <canvas id="canvas" height="300" width="500" style="border: 1px solid black"></canvas>
+                </div>
+
+
+
+            </div>
+
+            <form action="/" method="POST">
+                <div class="item">
+                    <p>Email template<span class="required">*</span></p>
+                    <input type="email" name="email" placeholder="Digite seu email">                  
+                    <textarea name="message" placeholder="Seu mensagem aqui"></textarea>
+                    <button>Enviar</button>
+                </div>
+            </form>
+            <div class="col-md-12 d-flex justify-content-around" id="btns">
+                <button type="button" style="margin-top: 2%; margin-bottom: 3%" class="btn btn-dark"
+                    data-action="action-save">Save</button>
+                <button type="button" style="margin-top: 2%; margin-bottom: 3%" class="btn btn-dark"
+                    data-action="action-undo">Undo</button>
+                <button type="button" style="margin-top: 2%; margin-bottom: 3%" class="btn btn-dark"
+                    data-action="action-clear">Clear</button>
+                <button type="button" style="margin-top: 2%; margin-bottom: 3%" class="btn btn-dark"
+                    data-action="action-pdf">Get Application</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="public/js/signature_pad.umd.js"></script>
+    <script src="p dist/js/mailer.js"></script>
+    <script src="js/signature_pad.umd.js"></script>
+    <script src="js/sign-handler.js"></script>
+
+    <script src="dist/js/sign-handler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+
+</html>
