@@ -1,9 +1,6 @@
 require("dotenv").config()
 const nodemailer = require("nodemailer")
 
-const multer = require("multer")
-const fs = require("fs");
-
 let userController = {
     index: (req, res) => {
         return res.render("index")
