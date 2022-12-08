@@ -1,8 +1,8 @@
 const express = require("express")
 const app = express()
 const UserRoute = require("./routes/users")
-
 var path = require('path');
+
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

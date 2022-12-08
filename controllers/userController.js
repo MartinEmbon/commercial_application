@@ -1,6 +1,9 @@
 require("dotenv").config()
 const nodemailer = require("nodemailer")
-const fs = require("fs")
+
+const multer = require("multer")
+const fs = require("fs");
+
 let userController = {
     index: (req, res) => {
         return res.render("index")
@@ -21,17 +24,11 @@ let userController = {
             subject: `Message from ${req.body.name}`,
             text: `${req.body.message}`,
             attachments: [{
-                'filename': 'generated.pdf',
-                'path':"./public/generated.pdf",
+                filename:  req.file,
+                // path: req.file.path,
+                path: './public/',
                 'contentType':'application/pdf'
             }]
-
-            // attachments: [{
-            //     filename: req.body.file,
-
-            //     //content: 'pdf',
-            //     //contentType: 'application/pdf'
-            // }]
 
         };
         transporter.sendMail(mailOptions, (err, data) => {
