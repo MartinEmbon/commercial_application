@@ -4,35 +4,34 @@ var multer = require('multer');
 var fileUpload = require('../upload-middleware');
 
 let userController = {
-  
+
     index: (req, res) => {
         return res.render("index")
     },
     email: (req, res) => {
-        let mailOptions = {
-            from: req.body.email,
-            to: 'martinembon@hotmail.com',
-            subject: `Message from ${req.body.name}`,
-            text: `${req.body.message}`,
-            attachments: [{
-                filename: 'cha.pdf',
-                path: __dirname+'/uploads/cha.pdf'
-                //cid: 'nyan@examaple.com' // should be as unique as possible,
-                //'contentType': 'application/pdf'
-            }]
-        };
-        var upload = multer({
+        let nombre=req.body.name
+        let email = req.body.email
+        let text = req.body.message
+                var upload = multer({
             storage: fileUpload.files.storage()
             // allowedFile: fileUpload.files.allowedFile
         }).single('file');
-
         upload(req, res, function (err) {
             if (err instanceof multer.MulterError) {
                 res.send(err);
             }
-           
-
         })
+        let mailOptions = {
+            from: email,
+            to: 'martinembon@hotmail.com',
+            subject: `Message from ${nombre}`,
+            text: text,
+            attachments: [{
+                filename: "",
+                //  path: __dirname+`/uploads/${req.body.file}`,
+                path: __dirname + "/uploads"
+            }]
+        };
 
         let transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -43,7 +42,7 @@ let userController = {
                 pass: "tdwyqeyddeqcymjr"
             }
         });
-     
+
         console.log(mailOptions)
         transporter.sendMail(mailOptions, (err, data) => {
             if (err) {
