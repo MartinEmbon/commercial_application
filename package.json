@@ -17,5 +17,16 @@
   },
   "scripts": {
     "start": "node index.js"
-  }
+  },
+  "description": "",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinEmbon/commercial_application.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MartinEmbon/commercial_application/issues"
+  },
+  "homepage": "https://github.com/MartinEmbon/commercial_application#readme"
 }
