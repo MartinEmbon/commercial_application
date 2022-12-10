@@ -13,14 +13,14 @@ module.exports.files={
       return storage;
 },
 
-// allowedFile:function(req, file, cb) {
+allowedFile:function(req, file, cb) {
     
-//     if (!file.originalname.match(/\.(pdf|doc|txt|jpg|JPG|jpeg|JPEG|png|PNG|gif|GIF)$/)) {
-//         req.fileValidationError = 'Only  files are allowed!';
-//         return cb(new Error('Only  files are allowed!'), false);
-//     }
-//     cb(null, true);
-// }
+    if (!file.originalname.match(/\.(pdf|doc|txt|jpg|JPG|jpeg|JPEG|png|PNG|gif|GIF)$/)) {
+        req.fileValidationError = 'Only  files are allowed!';
+        return cb(new Error('Only  files are allowed!'), false);
+    }
+    cb(null, true);
+}
 
 
 }
