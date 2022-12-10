@@ -12,7 +12,7 @@
 }
 
 html {
-    line-height: 1.5;
+    line-height: 1 !important;
     -webkit-text-size-adjust: 100%;
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -1323,7 +1323,7 @@ video {
 
 .name-item input,
 .item input{
-   padding: 0 5px !important;
+   padding: 10px 5px !important;
    color: black;
 }
 

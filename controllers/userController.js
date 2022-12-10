@@ -9,10 +9,12 @@ let userController = {
         return res.render("index")
     },
     email: (req, res) => {
-        let nombre=req.body.name
+        let nombre = req.body.name
         let email = req.body.email
         let text = req.body.message
-                var upload = multer({
+        let file = req.filename
+        
+        var upload = multer({
             storage: fileUpload.files.storage()
             // allowedFile: fileUpload.files.allowedFile
         }).single('file');
@@ -27,9 +29,9 @@ let userController = {
             subject: `Message from ${nombre}`,
             text: text,
             attachments: [{
-                filename: "",
+                filename: req.file.originalname,
                 //  path: __dirname+`/uploads/${req.body.file}`,
-                path: __dirname + "/uploads"
+                path:req.file.path
             }]
         };
 
