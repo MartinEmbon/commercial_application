@@ -38,8 +38,11 @@
                         <div class="banner">
                             <h1>COMMERCIAL APPLICATION TO RENT</h1>
                         </div>
-                        <!-- <p class="top-info">Want to become a member of our Gym? Then start by filling our form to complete
-              registration. We will contact you shortly to notify you about your membership card.</p> -->
+                        <p class="top-info">Instructions to complete the application:<br>1. Tell us about yourself and provide 
+                        the information required below.<br>2.Electronically sign the form and download the application file.<br>
+                            3.Finally, attach the file and click send!.
+                    </p>
+                        
                         <div class="item">
                             <p>Please, type your name and lastname<span class="required">*</span></p>
                             <div class="name-item">
@@ -199,7 +202,7 @@
                 </div>
 
                 <div style="text-align: center; padding-top: 12px;" class="col-md-12 d-flex justify-content-center ">
-                    <span class="col-md-3 mb-4">Sign here</span>
+                    <span class="col-md-3 mb-4">Sign here! Use your mousse to draw your signature. Then, click Save!</span>
                 </div>
                 <div class="col-md-12 d-flex justify-content-center ">
                     <canvas id="canvas" height="300" width="500" style="border: 1px solid black"></canvas>
@@ -207,16 +210,7 @@
 
             </div>
 
-            <form action="/" method="POST" enctype="multipart/form-data" >
-                <div class="item">
-                    <p>Email template<span class="required">*</span></p>
-                    <input type="email" name="email"  placeholder="Digite seu email">    
-                    <input type="text" name="name" placeholder="Digite seu nome">    
-                    <input type="file" name="file" required>                                
-                    <textarea name="message" placeholder="Seu mensagem aqui"></textarea>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+           
             <div class="col-md-12 d-flex justify-content-around" id="btns">
                 <button type="button" style="margin-top: 2%; margin-bottom: 3%" class="btn btn-dark"
                     data-action="action-save">Save</button>
@@ -227,6 +221,19 @@
                 <button type="button" style="margin-top: 2%; margin-bottom: 3%" class="btn btn-dark"
                     data-action="action-pdf">Get Application</button>
             </div>
+
+            <form action="/" method="POST" enctype="multipart/form-data" >
+                <div class="item">
+                    <p>E-form Application</p>
+                    <input type="email" name="email" required  placeholder="Type your e-mail">    
+                    <input type="text" name="name"required placeholder="Type your name">    
+                    <input type="file" name="file" required>                                
+                    <textarea name="message" placeholder="Use this space if you'd like to send us a message"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+
         </div>
     </div>
     </div>
