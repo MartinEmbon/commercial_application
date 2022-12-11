@@ -2,6 +2,7 @@ const express = require("express")
 const app = express()
 const UserRoute = require("./routes/users")
 var path = require('path');
+const PORT = process.env.PORT || 3030;
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -13,6 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/",UserRoute)
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("running on 3000")
 })
